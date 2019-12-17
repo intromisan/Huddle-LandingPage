@@ -21,6 +21,16 @@ a {
   font-weight: 700;
 }
 
+.prm-btn {
+  width: 70%;
+  background-color: #ff52bf;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  color: white;
+}
+
 header {
   background-color: #ebfbff;
   width: 100%;
@@ -50,18 +60,29 @@ header a {
   padding: .4rem 2rem;
   background-color: white;
   border-radius: 100px;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px -5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px -5px 10px rgba(0, 0, 0, 0.1);
 }
 
 main .front {
-  background-image: url(/images/bg-hero-mobile.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-image: url(/styles/bg-hero-mobile.svg);
   background-color: #ebfbff;
   height: 90vh;
-  padding-top: 5rem;
 }
 
 main .front .mockup {
   width: 80%;
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 main .front .mockup img {
@@ -80,6 +101,9 @@ main .front .info {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 main .front .info h1 {
@@ -97,15 +121,164 @@ main .front .info p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
+  color: #808d99;
 }
 
-main .front .info .prm-btn {
-  width: 70%;
-  background-color: #ff52bf;
+main .card {
+  width: 90%;
+  border-radius: 10px;
+  margin: 4rem auto;
+  padding: 10%;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px -5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+main .card .picture img {
+  width: 100%;
+}
+
+main .card .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   text-align: center;
-  padding: 1.5rem;
-  border-radius: 50px;
-  font-size: 1.3rem;
+  margin-top: 4rem;
+}
+
+main .card .content h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.3rem;
+}
+
+main .card .content p {
+  font-size: 1.4rem;
+  color: #808d99;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+main .community {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 10;
+  top: 11rem;
+}
+
+main .community h2 {
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+main .community .prm-btn {
+  margin-top: 2rem;
+  width: 80%;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px -5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1), 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #00252e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 13rem 5% 10%;
+}
+
+footer .logo-white {
+  width: 45%;
+  margin-bottom: 1rem;
+}
+
+footer .logo-white img {
+  width: 100%;
+}
+
+footer .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contacts img {
+  width: 1.6rem;
+}
+
+footer .contacts p {
   color: white;
+  padding-left: 1rem;
+  font-size: 1.5rem;
+}
+
+footer .one {
+  margin-top: 4rem;
+}
+
+footer .options li {
+  margin-top: 2rem;
+}
+
+footer .options a {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: white;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
+}
+
+footer .copyright p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+footer .socials {
+  width: 40%;
+  margin: 5rem auto 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 3rem;
+}
+
+footer .socials a {
+  margin: 0 1rem;
+}
+
+footer .socials a svg {
+  fill: white;
+  width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */
