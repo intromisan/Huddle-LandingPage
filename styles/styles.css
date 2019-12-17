@@ -61,7 +61,7 @@ main .front {
 
 main .front .mockup {
   width: 80%;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 main .front .mockup img {
@@ -97,5 +97,15 @@ main .front .info p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+main .front .info .prm-btn {
+  width: 70%;
+  background-color: #ff52bf;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
