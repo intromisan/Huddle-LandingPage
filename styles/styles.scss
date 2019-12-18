@@ -24,7 +24,7 @@ a {
 }
 
 .prm-btn {
-  width: 70%;
+  width: 18em;
   background-color: hsl(322, 100%, 66%);
   text-align: center;
   padding: 1.5rem;
@@ -61,11 +61,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    // background-image: url(../images/bg-hero-mobile.svg);
+    background-image: url(../images/bg-hero-mobile.svg);
     background-color: hsl(193, 100%, 96%);
     height: 90vh;
     .mockup {
-      width: 80%;
+      width: 31em;
       margin: 0 auto;
       img {
         width: 100%;
@@ -80,18 +80,19 @@ main {
       h1 {
         font-size: 2.4rem;
         font-weight: 600;
-        width: 70%;
+        width: 11em;
         margin: 0 auto;
         text-align: center;
+        color: hsl(192, 100%, 9%);
       }
       p {
         padding: 3rem 0;
         margin: 0 auto;
-        width: 75%;
+        width: 19em;
         text-align: center;
         font-size: 1.5rem;
         font-weight: 400;
-        color: hsl(208, 11%, 55%);
+        color: hsl(192, 100%, 9%);
       }
     }
   }
@@ -193,7 +194,7 @@ footer {
     }
   }
   .socials {
-    width: 40%;
+    width: 14em;
     margin: 5rem auto 3rem;
     display: flex;
     justify-content: space-evenly;
@@ -209,4 +210,154 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
 
+@media only screen and (min-width: 1024px) {
+  .prm-btn {
+    width: 50%;
+    font-size: .7rem;
+    padding: .8rem;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+  
+  header {
+    height: 20vh;
+    .logo {
+      width: 17%;
+    }
+  }
+
+  main {
+    .front {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2.5% 5%;
+      height: 80vh;
+      background-image: url(../images/bg-hero-desktop.svg);
+      background-size: cover;
+      .info {
+        width: 45%;
+        justify-content: center;
+        h1 {
+          font-size: 2rem;
+          width: 90%; 
+          text-align: left;
+          margin-left: 0;
+        }
+        p {
+          font-size: .85rem;
+          width: 90%;
+          text-align: left;
+          padding: 2rem 0;
+          margin-left: 0;
+        }
+      }
+      .mockup {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .card {
+      padding: 5% 2.5% 5% 8%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+      .picture {
+        width: 40%;
+      }
+      .content {
+        margin: 0;
+        text-align: left;
+        width: 50%;
+        h2 {
+          font-size: 1.7rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+    .conversation {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .community {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50%;
+      top: 10rem;
+      padding: 5% 0;
+      h2 {
+        margin: 0 auto;
+      }
+      .prm-btn {
+        align-self: center;
+        width: 60%;
+      }
+    }
+  }
+  footer {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    .logo-white {
+      width: 100%;
+      img {
+        width: 25%;
+      }
+    }
+    .middle {
+      display: flex;
+      justify-content: space-between;
+      .contacts {
+        img {
+          width: 1rem;
+        }
+        p {
+          font-size: .9rem;
+        }
+      }
+
+      .options {
+        
+        a {
+          font-size: 1rem;
+        }
+      }
+      .one {
+        margin: 0;
+      }
+      .socials {
+        margin: 2rem 0;
+        width: 16%;
+      }
+    }
+    .copyright {
+      width: 100%;
+      text-align: right;
+      margin-top: 2rem;
+      p {
+        font-size: .8rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  html {
+    font-size: 18px;
+  }
+} 
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 20px;
+  }
+}
